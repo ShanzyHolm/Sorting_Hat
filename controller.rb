@@ -3,6 +3,7 @@ require('sinatra/contrib/all')
 require('pry')
 
 require_relative('models/sort.rb')
+require_relative('models/student.rb')
 also_reload('models/*')
 
 get '/' do
@@ -11,6 +12,17 @@ end
 
 get '/sort' do
   erb(:sort)
+end
+
+# get '/result' do
+#   erb(:result)
+# end
+
+post '/result' do
+  house_array = ["Gryffindor", "Hufflepuff", "Ravenclaw", "Slytherin"]
+  sort = Sort.new(house_name = house_array.sample())
+  @sort = sort.house_sort()
+  erb(:result)
 end
 
 # get '/house/:options' do

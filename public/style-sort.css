@@ -15,8 +15,12 @@ h2 {
   font-size: 25pt;
 }
 
-.grid {
+h3 {
+  text-align: center;
+}
 
+.grid {
+  align-items: center;
 }
 
 .grid-row {
@@ -27,9 +31,12 @@ h2 {
   flex: 1;
   padding: 5px;
   text-align: center;
+  font-family: serif;
 }
-
-
+/*
+input {
+  align-items: center;
+} */
 
 
 
