@@ -9,6 +9,10 @@ get '/' do
   erb(:home)
 end
 
+get '/sort' do
+  erb(:sort)
+end
+
 # get '/house/:options' do
 #   house_array = ["Gryffindor", "Hufflepuff", "Ravenclaw", "Slytherin"]
 #   sort = Sort.new(:options = house_array.sample())
