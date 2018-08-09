@@ -1,0 +1,26 @@
+h1 {
+  font-family: 'Niconne', cursive;
+  font-size: 50pt;
+  text-align: center;
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+
+h2 {
+  font-family: 'Niconne', cursive;
+  font-size: 30pt;
+}
+
+.grid {
+
+}
+
+.grid-row {
+  display: flex;
+}
+
+.cell {
+  flex: 1;
+  padding: 5px;
+  text-align: center;
+}
